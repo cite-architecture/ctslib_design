@@ -1,4 +1,4 @@
-URN,method,expected result,notes
+URN value,method,expected result,notes
 Dumb string,constructor,exception,Not valid URN syntax.
 urn:cts:greekLit:,constructor,exception,URN must include a text group.
 urn:cts:greekLit:tlg1220.tlg001:1.1@,constructor,exception,Empty subreference string.
