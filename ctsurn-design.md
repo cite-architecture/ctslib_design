@@ -19,6 +19,11 @@ Given a CTS URN object, methods should return String values:
 
 ## Get possible subordinate parts of work component
 
+Given a CTS URN object, method should return a value from an enumerated set
+of some type appropriate to the implementing language:
+
+- get work level
+
 Given a CTS URN object, methods should return String values:
 
 - get text group
