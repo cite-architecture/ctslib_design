@@ -1,3 +1,9 @@
+# CTS URN class
+
+These notes describe behavior of a constructor and five categories of methods that a CTS URN library
+in any language should implement.
+
+
 
 ## Constructor ##
 
