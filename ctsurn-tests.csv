@@ -1,5 +1,5 @@
-URN value,method,expected result,notes
-Dumb string,constructor,exception,Not valid URN syntax.
-urn:cts:greekLit:,constructor,exception,URN must include a text group.
-urn:cts:greekLit:tlg1220.tlg001:1.1@,constructor,exception,Empty subreference string.
-urn:cts:greekLit:tlg1220.tlg001:1.1@μῆνιν[x],constructor,exception,Non-integer index value.
+Test  iD,URN value,method,expected result,notes
+1-01,Dumb string,constructor,exception,Not valid URN syntax.
+1-02,urn:cts:greekLit:,constructor,exception,URN must include a text group.
+1-03,urn:cts:greekLit:tlg1220.tlg001:1.1@,constructor,exception,Empty subreference string.
+1-04,urn:cts:greekLit:tlg1220.tlg001:1.1@μῆνιν[x],constructor,exception,Non-integer index value.
