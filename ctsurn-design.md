@@ -61,6 +61,7 @@ Given a CTS URN object, methods should return integer values:
 
 Given a CTS URN object, methods should return String values:
 
+- to string.  Should permit either return of raw string or of URI encoding of subreference strings and subreference index square brackets.
 - strip passage. Returns URN without passage component
 - reduce to work. Returns URN with work compoentn at notional work level.
 - reduce to version. Returns URN with work component at version level.
