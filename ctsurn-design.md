@@ -1,3 +1,9 @@
+# CTS URN class
+
+These notes describe behavior of a constructor and five categories of methods that a CTS URN library
+in any language should implement.
+
+
 
 ## Constructor ##
 
@@ -12,6 +18,11 @@ Given a CTS URN object, methods should return String values:
 - get passage component
 
 ## Get possible subordinate parts of work component
+
+Given a CTS URN object, method should return a value from an enumerated set
+of some type appropriate to the implementing language:
+
+- get work level
 
 Given a CTS URN object, methods should return String values:
 
