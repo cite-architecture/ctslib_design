@@ -33,11 +33,18 @@ Given a CTS URN object, methods should return String values:
 
 - get range beginning node
 - get range end node
+- get subref (subref on point node)
+- get subref 1 (subref string on range beginning node)
+- get subref 2 (subref on range end node)
+
 
 Given a CTS URN object, methods should return integer values:
 
-- get subref 1 (subref on range beginning node)
-- get subref 2 (subref on range end node)
+- get subref index (index on subreference on a point node)
+- get subref index 1  (index on subreference on range beginning node)
+- get subref index 2  (index on subreference on range end node)
+
+
 
 ## Convenience methods
 
