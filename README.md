@@ -1,4 +1,3 @@
-ctslib_design
-=============
+# ctslib_design
 
-Design notes and tests for evaluating libraries working with CTS URNs and TextInventories
+Design notes and tests for evaluating libraries working with CTS URNs and TextInventories.
