@@ -47,4 +47,15 @@ Test ID,URN value,method,other parameters,expected result,notes
 4.05,urn:cts:greekLit:tlg0012.tlg001:1.1@μ-1.1@ν[2],hasSubref,,true,Boolean value.
 4.06,urn:cts:greekLit:tlg0012.tlg001:1.1-1.2@οὐλομένην,hasSubref,,true,Boolean value.
 5.01,urn:cts:greekLit:tlg1220.tlg001:1.1,getRangeBegin,,exception,Not a range URN.
-
+5.02,urn:cts:greekLit:tlg1220.tlg001:1.1,getRangeEnd,,exception,Not a range URN.
+5.03,urn:cts:greekLit:tlg1220.tlg001:1.1-1.24,getRangeBegin,,1.1,String value.
+5.04,urn:cts:greekLit:tlg1220.tlg001:1.1-1.24,getRangeEnd,,1.24,String value.
+5.05,urn:cts:greekLit:tlg0012.tlg001:1.1@μῆνιν[1]-1.2@ν[2],getRangeBegin,,1.1,String value.
+5.06,urn:cts:greekLit:tlg0012.tlg001:1.1@μῆνιν[1]-1.2@ν[2],getRangeEnd,,1.2,String value.
+5.07,urn:cts:greekLit:tlg0012.tlg001:1.1@μῆνιν[1]-1.2@ν[2],getSubref1,,μῆνιν,String value.
+5.08,urn:cts:greekLit:tlg0012.tlg001:1.1@μῆνιν[1]-1.2@ν[2],getSubref2,,ν,String value.
+5.09,urn:cts:greekLit:tlg0012.tlg001:1.1@μῆνιν[1]-1.2@ν[2],getSubrefIdx1,,1,Integer value.
+5.10,urn:cts:greekLit:tlg0012.tlg001:1.1@μῆνιν[1]-1.2@ν[2],getSubrefIdx2,,2,Integer value.
+6.01,urn:cts:greekLit:tlg0012.tlg001:1.1@μῆνιν[1],toString,,urn:cts:greekLit:tlg0012.tlg001:1.1@μῆνιν[1],String value.
+6.02,urn:cts:greekLit:tlg0012.tlg001:1.1@μῆνιν[1],toString,encode=true,urn:cts:greekLit:tlg0012.tlg001:1.1%40%CE%BC%E1%BF%86%CE%BD%CE%B9%CE%BD%5B1%5D,String value.
+6.03,urn:cts:greekLit:tlg0012.tlg001:1.1-1.2@ν[2],toString,encode=true,urn:cts:greekLit:tlg0012.tlg001:1.1-1.2%40%CE%BD%5B2%5D,String value.
