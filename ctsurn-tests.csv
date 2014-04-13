@@ -1,21 +1,35 @@
 Test ID,URN value,method,other params,expected result,notes
 1-01,Dumb string,constructor,,exception,Not valid URN syntax.
-1-02,urn:cts:greekLit:,constructor,,exception,URN must include a text
-group.
-1-03,urn:cts:greekLit:tlg1220.tlg001:1.1@,constructor,,exception,Empty
-subreference string.
-1-04,urn:cts:greekLit:tlg1220.tlg001:1.1@μῆνιν[x],constructor,,exception,Non-integer
-index value.  1-05,urn:cts:greekLit:tlg1220.tlg001,constructor,,valid
-urn,Final colon optional as of 5.0.rc.3.
-1.06,urn:cts:greekLit:tlg0012.tlg001:1.25-,constructor,,exception,Empty
-second node of range.
-1.07,urn:cts:greekLit:tlg0012.tlg001:1.1-1.24@,constructor,,exception,Empty
-substring reference.
-1.08,urn:cts:greekLit:tlg0012.tlg001:1.1@-1.24,constructor,,exception,Empty
-substring reference.
-1.09,urn:cts:greekLit:tlg0012.tlg001:1.1@,constructor,,exception,Empty
-substring reference.
+1-02,urn:cts:greekLit:,constructor,,exception,URN must include a text group.
+1-03,urn:cts:greekLit:tlg1220.tlg001:1.1@,constructor,,exception,Empty subreference string.
+1-04,urn:cts:greekLit:tlg1220.tlg001:1.1@μῆνιν[x],constructor,,exception,Non-integer index value.  
+1-05,urn:cts:greekLit:tlg1220.tlg001,constructor,,valid urn,Final colon optional as of 5.0.rc.3.
+1.06,urn:cts:greekLit:tlg0012.tlg001:1.25-,constructor,,exception,Empty second node of range.
+1.07,urn:cts:greekLit:tlg0012.tlg001:1.1-1.24@,constructor,,exception,Empty substring reference.
+1.08,urn:cts:greekLit:tlg0012.tlg001:1.1@-1.24,constructor,,exception,Empty substring reference.
+1.09,urn:cts:greekLit:tlg0012.tlg001:1.1@,constructor,,exception,Empty substring reference.
 2.01,urn:cts:greekLit:tlg1220.tlg001:1,getCtsNamespace,,"greekLit",
-2.01,urn:cts:greekLit:tlg1220.tlg001:1,getWorkComponent,,"tlg1220.tlg001",
-2.01,urn:cts:greekLit:tlg1220.tlg001:1,getPassageComponent,,"1",
+2.02,urn:cts:greekLit:tlg1220.tlg001:1,getWorkComponent,,"tlg1220.tlg001",
+2.03,urn:cts:greekLit:tlg1220.tlg001:1,getPassageComponent,,"1",
+3.01,urn:cts:latinLit:stoa0115,getWorkLevel,,GROUP,
+3.02,urn:cts:latinLit:stoa0115.stoa002:preface.1,getWorkLevel,,WORK,
+3.03,urn:cts:latinLit:stoa0115.stoa002.stoa01,getWorkLevel,,VERSION,
+3.04,urn:cts:latinLit:stoa0115.stoa002.stoa01.tokenized,getWorkLevel,,EXEMPLAR,
+3.05,urn:cts:greekLit:tlg0012,getTextGroup,,"tlg0012",
+3.06,urn:cts:greekLit:tlg0012,getWork,,exception,No work defined.
+3.07,urn:cts:greekLit:tlg0012,getWork,ctsns=true,exception,No work defined.
+3.08,urn:cts:greekLit:tlg0012,getVersion,,exception,No version defined.
+3.09,urn:cts:greekLit:tlg0012,getVersion,ctsns=true,exception,No version defined.
+3.10,urn:cts:greekLit:tlg0012,getExemplar,,exception,No exemplar defined.
+3.11,urn:cts:greekLit:tlg0012,getExemplar,ctsns=true,exception,No exemplar defined.
+3.12,urn:cts:greekLit:tlg1220.tlg001:1,getTextGroup,ctsns=true,"greekLit:tlg1220",
+3.13,urn:cts:greekLit:tlg1220.tlg001:1,getWork,ctsns=true,"greekLit:tlg001",
+3.14,urn:cts:greekLit:tlg1220.tlg001:1,getTextGroup,ctsns=false,"tlg1220",
+3.15,urn:cts:greekLit:tlg1220.tlg001:1,getWork,ctsns=false,"tlg001",
+3.16,urn:cts:greekLit:tlg1220.tlg001:1,getTextGroup,,"tlg1220",
+3.17,urn:cts:greekLit:tlg1220.tlg001:1,getWork,,"tlg001",
+3.18,urn:cts:greekLit:tlg1220.tlg001:1,getVersion,,exception,No version defined.
+3.19,urn:cts:greekLit:tlg1220.tlg001:1,getVersion,ctsns=true,exception,No version defined.
+3.20,urn:cts:greekLit:tlg1220.tlg001:1,getExemplar,,exception,No exemplar defined.
+3.21,urn:cts:greekLit:tlg1220.tlg001:1,getExemplar,ctsns=true,exception,No exemplar defined.
 
