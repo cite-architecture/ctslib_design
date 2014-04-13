@@ -32,4 +32,19 @@ Test ID,URN value,method,other params,expected result,notes
 3.19,urn:cts:greekLit:tlg1220.tlg001:1,getVersion,ctsns=true,exception,No version defined.
 3.20,urn:cts:greekLit:tlg1220.tlg001:1,getExemplar,,exception,No exemplar defined.
 3.21,urn:cts:greekLit:tlg1220.tlg001:1,getExemplar,ctsns=true,exception,No exemplar defined.
+3.22,urn:cts:greekLit:tlg0012.tlg001.msA:1.10,getVersion,ctsn=true,"greekLit:msA",
+3.23,urn:cts:greekLit:tlg0012.tlg001.msA:1.10,getVersion,ctsn=false,"msA",
+3.24,urn:cts:greekLit:tlg0012.tlg001.msA:1.10,getVersion,,"msA",
+3.25,urn:cts:greekLit:tlg0012.tlg001.msA:1.10,getExemplar,ctsns=true,exception,No exemplar defined.
+3.26,urn:cts:greekLit:tlg0012.tlg001.msA:1.10,getExemplar,,exception,No exemplar defined.
+3.27,urn:cts:greekLit:tlg0012.tlg001.msA.tokens:1.10.2,getExemplar,,"tokens",
+3.28,urn:cts:greekLit:tlg0012.tlg001.msA.tokens:1.10.2,getExemplar,ctsns=false,"tokens",
+3.29,urn:cts:greekLit:tlg0012.tlg001.msA.tokens:1.10.2,getExemplar,ctsns=true,"greekLit:tokens",
+4.01,urn:cts:greekLit:tlg1220.tlg001:1.1,isRange,,false,
+4.02,urn:cts:greekLit:tlg1220.tlg001:1.1-1.24,isRange,,true,
+4.03,urn:cts:greekLit:tlg0012.tlg001:1.,hasSubref,,false,
+4.04,urn:cts:greekLit:tlg0012.tlg001:1.1@μῆνιν,hasSubref,,true,
+4.05,urn:cts:greekLit:tlg0012.tlg001:1.1@μ-1.1@ν[2],hasSubref,,true,
+4.06,urn:cts:greekLit:tlg0012.tlg001:1.1-1.2@οὐλομένην,hasSubref,,true,
+5.01,urn:cts:greekLit:tlg1220.tlg001:1.1,getRangeBegin,,exception,Not a range URN.
 
