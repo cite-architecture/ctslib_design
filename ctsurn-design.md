@@ -42,6 +42,7 @@ Given a CTS URN object, methods should return boolean values:
  
 Given a CTS URN object, methods should return String values:
 
+- get passage node
 - get range beginning node
 - get range end node
 - get subref (subref on point node)
